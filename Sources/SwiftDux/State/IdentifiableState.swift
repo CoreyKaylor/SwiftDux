@@ -4,7 +4,7 @@ import Foundation
 ///
 /// This is typically used for entities stored in your state that might be accessed by id
 /// or displayed in a `List` view.
-public protocol IdentifiableState: StateType, Identifiable where ID: Codable {}
+public protocol IdentifiableState: CodableStateType, Identifiable where ID: Codable {}
 
 extension IdentifiableState {
 

@@ -87,7 +87,7 @@ internal class OrderedStateStorage<Substate>: Codable, Equatable where Substate:
 /// }
 ///
 /// ```
-public struct OrderedState<Substate>: StateType where Substate: IdentifiableState {
+public struct OrderedState<Substate>: CodableStateType where Substate: IdentifiableState {
 
   public typealias Id = Substate.ID
   public typealias Index = Int
